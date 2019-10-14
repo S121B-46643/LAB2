@@ -27,7 +27,7 @@ int main()
 			cout << "Podaj liczbe b: ";
 			cin >> b;
 			c = a + b;
-			cout << "Wynik: " << c << endl;
+			cout << "Wynik: " << c << endl << endl;
 			break;
 		case 2:
 			cout << "Wybrano odejmowanie a-b" << endl;
@@ -36,7 +36,7 @@ int main()
 			cout << "Podaj liczbe b: ";
 			cin >> b;
 			c = a - b;
-			cout << "Wynik: " << c << endl;
+			cout << "Wynik: " << c << endl << endl;
 			break;
 		case 3:
 			cout << "Wybrano mnozenie a*b" << endl;
@@ -45,7 +45,7 @@ int main()
 			cout << "Podaj liczbe b: ";
 			cin >> b;
 			c = a * b;
-			cout << "Wynik: " << c << endl;
+			cout << "Wynik: " << c << endl << endl;
 			break;
 		case 4:
 			cout << "Wybrano dzielenie a/b" << endl;
@@ -56,11 +56,11 @@ int main()
 			if (b != 0)
 			{
 				c = a / b;
-				cout << "Wynik: " << c << endl;
+				cout << "Wynik: " << c << endl << endl;
 			}
 			else
 			{
-				cout << "Blad - Nie dozwolone jest dzielic przez zero!";
+				cout << "Blad - Nie dozwolone jest dzielic przez zero!" << endl << endl;
 			}
 			break;
 
