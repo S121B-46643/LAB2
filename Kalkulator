@@ -1,0 +1,74 @@
+#include "pch.h"
+#include <iostream>
+
+using namespace std;
+int w;
+float a, b, c;
+
+int main()
+{
+	w = 10;
+	do
+	{
+		cout << "Kalkulator" << endl;
+		cout << "1.Dodawanie" << endl;
+		cout << "2.Odejmowanie" << endl;
+		cout << "3.Mnozenie" << endl;
+		cout << "4.Dzielenie" << endl;
+		cout << "0.Wyjdz" << endl;
+		cout << "Wybor: ";
+		cin >> w;
+		switch (w)
+		{
+		case 1:
+			cout << "Wybrano dodawanie a+b" << endl;
+			cout << "Podaj liczbe a: ";
+			cin >> a;
+			cout << "Podaj liczbe b: ";
+			cin >> b;
+			c = a + b;
+			cout << "Wynik: " << c << endl;
+			break;
+		case 2:
+			cout << "Wybrano odejmowanie a-b" << endl;
+			cout << "Podaj liczbe a:";
+			cin >> a;
+			cout << "Podaj liczbe b: ";
+			cin >> b;
+			c = a - b;
+			cout << "Wynik: " << c << endl;
+			break;
+		case 3:
+			cout << "Wybrano mnozenie a*b" << endl;
+			cout << "Podaj liczbe a:";
+			cin >> a;
+			cout << "Podaj liczbe b: ";
+			cin >> b;
+			c = a * b;
+			cout << "Wynik: " << c << endl;
+			break;
+		case 4:
+			cout << "Wybrano dzielenie a/b" << endl;
+			cout << "Podaj liczbe a:";
+			cin >> a;
+			cout << "Podaj liczbe b: ";
+			cin >> b;
+			if (b != 0)
+			{
+				c = a / b;
+				cout << "Wynik: " << c << endl;
+			}
+			else
+			{ 
+				cout << "Blad - Nie dozwolone jest dzielic przez zero!";
+			}
+			break;
+
+				
+			
+
+		}
+	} while (w != 0);
+	cout << "Program zostal wylaczony";
+		return 0;
+}
